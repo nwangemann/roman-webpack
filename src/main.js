@@ -1,11 +1,13 @@
 import $ from 'jquery';
-import 'bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { toRoman } from './roman-numeral.js';
+import 'bootstrap/dist/css/bootstrap.css';
+import './styles.css';
+import 'bootstrap';
 
 
 // user interface logic gathers input info
 $(document).ready(function(){
+  console.log("reached this point!");
   $(".numberToRoman").submit(function(event){
     event.preventDefault();
     var numberInput = $("#input").val();
